@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/dpi_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Capstone_mysql3"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".OrderHistory"
+            android:exported="false" />
+        <activity
+            android:name=".BMICalculate"
+            android:exported="false" />
+        <activity
+            android:name=".OrderPage_01"
+            android:exported="false" />
+        <activity
+            android:name=".OrderPage_02"
+            android:exported="false" />
+        <activity
+            android:name=".OrderFinalPage"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyMain"
+            android:exported="false" />
+        <activity
+            android:name=".Prescription_Activity_Patient"
+            android:exported="false" />
+        <activity
+            android:name=".PatientFetchPrescription"
+            android:exported="false" />
+        <activity
+            android:name=".OTPActivity2"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Prescription_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Prescribe_medicines_1"
+            android:exported="false" />
+        <activity
+            android:name=".OTPActivity_doctor"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".Settings_Icon_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Prescription_Icon_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Cart_Icon_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorLoginOnly"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".OTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DoctorFetchPrescription"
+            android:exported="false" />
+    </application>
+
+</manifest>

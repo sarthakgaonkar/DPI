@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prescribe_medicines_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="#F5F5F5">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Search"
+            android:drawableLeft="@drawable/search_anything"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_text_background"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="15dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectedMedicinesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="15dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/currentDateEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="  Current Date"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:focusable="false"
+                android:drawableLeft="@drawable/baseline_date_range_24"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/expiryDateEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="  Expiry Date"
+                android:drawableLeft="@drawable/baseline_date_range_24"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:hint=" Title"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/title_icon"/>
+
+        <EditText
+            android:id="@+id/patientPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number: "
+            android:inputType="phone"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:maxLines="1"
+            android:drawableStart="@drawable/phone_number"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/prescribeButton"
+            android:text="Prescribe"
+            android:backgroundTint="@color/light_blue"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="gatherPrescriptionDetails"/>
+    </LinearLayout>
+</ScrollView>

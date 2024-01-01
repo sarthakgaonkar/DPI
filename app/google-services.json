@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55485835978",
+    "project_id": "capstone-mysql3",
+    "storage_bucket": "capstone-mysql3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55485835978:android:6d1daf2856e67c05692233",
+        "android_client_info": {
+          "package_name": "com.example.capstone_mysql3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg67DHPA92C8kSxCVbb8Hr9RZvw1CBWtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

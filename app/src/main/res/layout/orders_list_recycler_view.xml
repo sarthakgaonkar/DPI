@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Order ID: 48690 "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="15dp"
+                android:layout_below="@id/textViewShortDesc"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/patient_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient ID: "
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="8dp"
+                tools:text="Patient ID: P456" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Date: "
+            android:layout_marginTop="8dp"
+            tools:text="Order Date: 1 Jan 2023" />
+
+        <TextView
+            android:id="@+id/shipping_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping Address: "
+            android:layout_marginTop="8dp"
+            tools:text="Shipping Address: 123 Street, City, Country" />
+
+
+        <TextView
+            android:id="@+id/medicine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicines: "
+            android:layout_marginTop="8dp"
+            tools:text="Medicine Name: Paracetamol" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
